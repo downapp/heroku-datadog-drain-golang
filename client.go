@@ -16,7 +16,8 @@ const (
 	metricsTag
 )
 
-var routerMetricsKeys = []string{"dyno", "method", "status", "path", "host", "code", "desc", "at"}
+//var routerMetricsKeys = []string{"dyno", "method", "status", "path", "host", "code", "desc", "at"}
+var routerMetricsKeys = []string{"dyno", "method", "status", "host", "code", "desc", "at"} //we remove path from router metrics tag beacuse we create too much tags
 var sampleMetricsKeys = []string{"source"}
 var scalingMetricsKeys = []string{"mailer", "web"}
 var customMetricsKeys = []string{"media_type", "output_type", "route"}
